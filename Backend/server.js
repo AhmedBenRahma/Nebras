@@ -8,10 +8,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-const port = process.env.PORT || 3000;
 
-const DB_URL = process.env.MONGODB_URI ||
-  'mongodb+srv://yagami:modricthegoat10@cluster0.qzmfd2q.mongodb.net/sundownsDB?retryWrites=true&w=majority';
 
 // Optional: désactiver strictQuery si vous voulez éviter un avertissement
 mongoose.set('strictQuery', false);
