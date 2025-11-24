@@ -1,0 +1,19 @@
+# This file contains analysis options for Dart code, specifying linting rules and other settings.
+analyzer:
+  errors:
+    unused_import: warning
+    dead_code: warning
+    missing_return: error
+
+linter:
+  rules:
+    - avoid_print
+    - prefer_const_constructors
+    - prefer_final_fields
+    - unnecessary_new
+    - always_specify_types
+    - public_member_api_docs
+    - lines_longer_than_80_chars
+    - type_annotate_public_apis
+    - prefer_single_quotes
+    - avoid_annotating_with_dynamic

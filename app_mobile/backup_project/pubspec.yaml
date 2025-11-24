@@ -1,0 +1,25 @@
+name: app_mobile
+description: A new Flutter project named App_mobile with camera, OCR, TTS, and word frequency analysis features.
+publish_to: "none"
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  camera: ^0.10.0
+  google_ml_kit: ^0.7.0
+  flutter_tts: ^3.4.0
+  http: ^0.13.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/

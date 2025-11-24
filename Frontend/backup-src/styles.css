@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@300;400;600&display=swap');
+
+:root{
+  --bg-board:#0b3d2e; --chalk:#eef9f1; --accent:#ffd166; --muted:#9aa5a0;
+}
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;font-family:Inter,system-ui,Arial;background:
+  radial-gradient(circle at 10% 10%, rgba(255,255,255,0.02), transparent 10%),
+  linear-gradient(180deg, rgba(255,255,255,0.02), transparent 30%),
+  var(--bg-board);
+  color:var(--chalk);
+  -webkit-font-smoothing:antialiased;
+}
+
+/* chalk border frame */
+.app{max-width:1200px;margin:18px auto;padding:18px;border-radius:14px;background:
+  linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.03));
+  box-shadow:0 12px 40px rgba(2,6,23,0.35)}
+
+/* header like school banner */
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;border-bottom:4px solid rgba(255,255,255,0.03)}
+.brand{display:flex;gap:12px;align-items:center}
+.logo-badge{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,#ffd166,#f89f9f);display:flex;align-items:center;justify-content:center;font-family:'Fredoka One',cursive;color:#0b3d2e;font-size:28px}
+.brand h1{margin:0;color:var(--chalk);font-family:'Fredoka One',cursive}
+.tag{color:var(--muted);font-size:12px}
+
+/* layout */
+.layout{display:flex;gap:18px;padding:20px}
+.main-panel{flex:1}
+.side-panel{width:360px}
+
+/* cards */
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.04));padding:16px;border-radius:12px;border:1px dashed rgba(255,255,255,0.03)}
+.dashboard-head{display:flex;justify-content:space-between;align-items:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin-top:14px}
+
+/* word card style - chalk look */
+.word-card{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));border:1px solid rgba(255,255,255,0.03)}
+.word{font-weight:700;font-size:1.05rem;color:var(--chalk);text-shadow:0 1px 0 rgba(0,0,0,0.35)}
+.count{color:var(--muted);font-size:0.85rem}
+
+/* mascot */
+.mascot{display:flex;flex-direction:column;align-items:center;gap:10px;padding:18px;border-radius:12px;position:relative}
+.mascot-face{font-size:64px;filter:drop-shadow(0 6px 12px rgba(0,0,0,0.4))}
+.mascot-bubble{background:rgba(255,255,255,0.06);color:var(--chalk);padding:10px 14px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);font-weight:600}
+.pulse{animation:mascotPulse 1.8s ease}
+@keyframes mascotPulse{0%{transform:translateY(0)}40%{transform:translateY(-8px)}100%{transform:translateY(0)}}
+
+/* onboarding modal */
+.onboard{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:520px;padding:20px;border-radius:12px;background:linear-gradient(180deg,#142f28,#0f2a1f);box-shadow:0 30px 80px rgba(0,0,0,0.6);z-index:60}
+.onboard h2{margin:0 0 8px 0;font-family:'Fredoka One',cursive}
+.onboard p{color:var(--muted)}
+
+/* Game */
+.flashcard .card{background:rgba(255,255,255,0.03);color:var(--chalk);padding:26px;border-radius:12px;text-align:center}
+.flashcard h3{font-size:2rem;margin:8px 0}
+.game-controls button{margin:6px;padding:8px 12px;border-radius:10px;border:none;background:var(--accent);color:#0b3d2e;cursor:pointer}
+
+/* nice chalk underline for footer */
+footer{padding:12px;text-align:center;color:var(--muted);font-size:13px;margin-top:18px}
