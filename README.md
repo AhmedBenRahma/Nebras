@@ -30,9 +30,9 @@ An educational platform dedicated to supporting children in school who suffer fr
 **Nebras** helps dyslexic students overcome learning challenges using a smart pen paired with a mobile application. The system extracts handwritten text from images, syncs it to a central MongoDB database, and leverages web and mobile apps to track words learned, highlight difficult words, offer personalized learning games, and provide audio pronunciation for words and syllables.
 
 ---
-![Aperçu 1](./Capture%20d%E2%80%99%C3%A9cran%201.png)
-![Aperçu 2](./Capture%20d%E2%80%99%C3%A9cran%202.png)
-![Aperçu 3](./Capture%20d%E2%80%99%C3%A9cran%203.png)
+![Aperçu 1](./1.png)
+![Aperçu 2](./2.png)
+![Aperçu 3](./3.png)
 
 
 ## Demo Video
