@@ -9,17 +9,6 @@ app.use(cors());
 app.use(bodyParser.json());
 
 
-
-// Optional: désactiver strictQuery si vous voulez éviter un avertissement
-mongoose.set('strictQuery', false);
-
-mongoose.connect(DB_URL)
-  .then(() => console.log('✅ Connecté à MongoDB'))
-  .catch(err => {
-    console.error('❌ Erreur de connexion DB :', err);
-    process.exit(1);
-  });
-
 const ScannedWordSchema = new mongoose.Schema({
   userId: String, word: String, timestamp: { type: Date, default: Date.now }
 });
